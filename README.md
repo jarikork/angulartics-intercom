@@ -52,6 +52,24 @@ angular.module('myApp', [
 
 Documentation is available on the [Angulartics site](http://angulartics.github.io/).
 
+### Settings
+
+You can set an option to only send to Intercom if an attribute is present on the element. This is required because of the event throttling (500 - 1000/minute).
+
+```javascript
+angular
+  .module('myApp', [])
+  .config(function ($analyticsProvider) {
+    $analyticsProvider.settings.intercomRequiresAttribute = true;
+  });
+```
+
+When this is set an event will only be sent if an `analytics-intercom` attribute is on the element reporting the event. E.g.:
+
+```html
+<button ng-click="doTheThing()" analytics-on analytics-category="Thing" analytics-event="Was Done" analytics-intercom>DO THE THING</button>
+```
+
 ## Development
 
 ```shell
