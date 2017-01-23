@@ -1,6 +1,6 @@
 {
   "name": "angulartics-intercom",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Intercom plugin for Angulartics",
   "keywords": [
     "intercom",
@@ -28,7 +28,8 @@
     "Hannah Fouasnon <hanelifou@gmail.com> (https://github.com/fouasnon)",
     "Alex Logvynovskiy <alex@busuu.com> (https://github.com/dr-axly)",
     "Fil Maj <maj.fil@gmail.com> (https://github.com/filmaj)",
-    "Rowan Crawford<wombleton@gmail.com> (https://github.com/wombleton)"
+    "Rowan Crawford<wombleton@gmail.com> (https://github.com/wombleton)",
+    "Jari Korkiakoski <jari.korkiakoski@iki.fi> (https://github.com/jarikork)"
   ],
   "main": "lib/index.js",
   "scripts": {
@@ -39,14 +40,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/wombleton/angulartics-intercom"
+    "url": "https://github.com/jarikork/angulartics-intercom"
   },
   "bugs": {
-    "url": "https://github.com/wombleton/angulartics-intercom/issues"
+    "url": "https://github.com/jarikork/angulartics-intercom/issues"
   },
   "license": "MIT",
+  "dependencies": {
+    "angulartics": "~1.3.0"
+  },
   "peerDependencies": {
-    "angulartics": "~1.0.0"
+    "angulartics": "~1.3.0"
   },
   "devDependencies": {
     "uglifyjs": "2.4.10"
